@@ -11,7 +11,9 @@ console.log(`CPU cores: ${cpuCores}`);
 
 const target = process.argv[2];
 
-if (!target.match(/^[0-9a-f]+$/)) {
+const bech32table = "qpzry9x8gf2tvdw0s3jn54khce6mua7l";
+
+if (!target.match(new RegExp(`^[${bech32table}]{1,38}$`))) {
     console.log("Invalid target");
     process.exit(1);
 }

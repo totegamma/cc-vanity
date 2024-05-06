@@ -10,7 +10,7 @@ async function startWorker(target) {
     while (running) {
         attempts++;
         const identity = generateIdentity();
-        if (identity.CCID.startsWith("CC"+target)) {
+        if (identity.CCID.startsWith("con1"+target)) {
             parentPort.postMessage({
                 'type': 'completed',
                 'result': identity,
