@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@concurrent-world/client": "^6.0.7"
+    "@concurrent-world/client": "^6.0.9"
   }
 }

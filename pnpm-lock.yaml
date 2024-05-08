@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@concurrent-world/client':
-    specifier: ^6.0.7
-    version: 6.0.7
+    specifier: ^6.0.9
+    version: 6.0.9
 
 packages:
 
@@ -15,14 +15,14 @@ packages:
     resolution: {integrity: sha512-96Z2IP3mYmF1Xg2cDm8f1gWGf/HUVedQ3FMifV4kG/PQ4yEP51xDtRAEfhVNt5f/uzpNkZHwWQuUcu6D6K+Ekw==}
     dev: false
 
-  /@concurrent-world/client@6.0.7:
-    resolution: {integrity: sha512-QPuK4NIBA6Svj1VdgnFDIPVaRJ8CmrW1s5M1CTa9UpTegFmpQpYaPliPJNhxanboJOJ4uZ7+E3vtPEGf5v3LUA==}
+  /@concurrent-world/client@6.0.9:
+    resolution: {integrity: sha512-QaSw59XIYUTrwJur4orbELBGtz2qlmZAHRHKR0hzZ2YEJ84WkU+C9bSTPy/ig2BTXhLui3F7PLmf903aUrRaUg==}
     dependencies:
       '@cosmjs/amino': 0.32.3
       '@cosmjs/crypto': 0.32.3
       '@cosmjs/encoding': 0.32.3
-      elliptic: 6.5.4
-      ethers: 6.11.1
+      elliptic: 6.5.5
+      ethers: 6.12.1
       uuid: 9.0.1
     transitivePeerDependencies:
       - bufferutil
@@ -44,9 +44,9 @@ packages:
       '@cosmjs/encoding': 0.32.3
       '@cosmjs/math': 0.32.3
       '@cosmjs/utils': 0.32.3
-      '@noble/hashes': 1.3.2
+      '@noble/hashes': 1.4.0
       bn.js: 5.2.1
-      elliptic: 6.5.4
+      elliptic: 6.5.5
       libsodium-wrappers-sumo: 0.7.13
     dev: false
 
@@ -79,6 +79,11 @@ packages:
     engines: {node: '>= 16'}
     dev: false
 
+  /@noble/hashes@1.4.0:
+    resolution: {integrity: sha512-V1JJ1WTRUqHHrOSh597hURcMqVKVGL/ea3kv0gSnEdsEZ0/+VyPghM1lMNGc00z7CIQorSvbKpuJkxvuHbvdbg==}
+    engines: {node: '>= 16'}
+    dev: false
+
   /@types/node@18.15.13:
     resolution: {integrity: sha512-N+0kuo9KgrUQ1Sn/ifDXsvg0TTleP7rIy4zOBGECxAljqvqfqpTfzx0Q1NUedOixRMBfe2Whhb056a42cWs26Q==}
     dev: false
@@ -107,8 +112,8 @@ packages:
     resolution: {integrity: sha512-cKV8tMCEpQs4hK/ik71d6LrPOnpkpGBR0wzxqr68g2m/LB2GxVYQroAjMJZRVM1Y4BCjCKc3vAamxSzOY2RP+w==}
     dev: false
 
-  /elliptic@6.5.4:
-    resolution: {integrity: sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ==}
+  /elliptic@6.5.5:
+    resolution: {integrity: sha512-7EjbcmUm17NQFu4Pmgmq2olYMj8nwMnpcddByChSUjArp8F5DQWcIcpriwO4ZToLNAJig0yiyjswfyGNje/ixw==}
     dependencies:
       bn.js: 4.12.0
       brorand: 1.1.0
@@ -119,8 +124,8 @@ packages:
       minimalistic-crypto-utils: 1.0.1
     dev: false
 
-  /ethers@6.11.1:
-    resolution: {integrity: sha512-mxTAE6wqJQAbp5QAe/+o+rXOID7Nw91OZXvgpjDa1r4fAbq2Nu314oEZSbjoRLacuCzs7kUC3clEvkCQowffGg==}
+  /ethers@6.12.1:
+    resolution: {integrity: sha512-j6wcVoZf06nqEcBbDWkKg8Fp895SS96dSnTCjiXT+8vt2o02raTn4Lo9ERUuIVU5bAjoPYeA+7ytQFexFmLuVw==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@adraffy/ens-normalize': 1.10.1
