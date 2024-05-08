@@ -1,4 +1,4 @@
-import { generateIdentity } from "@concurrent-world/client";
+import { GenerateIdentity } from "@concurrent-world/client";
 import { parentPort } from 'worker_threads';
 
 
@@ -9,7 +9,7 @@ let running = false;
 async function startWorker(target) {
     while (running) {
         attempts++;
-        const identity = generateIdentity();
+        const identity = GenerateIdentity();
         if (identity.CCID.startsWith("con1"+target)) {
             parentPort.postMessage({
                 'type': 'completed',
